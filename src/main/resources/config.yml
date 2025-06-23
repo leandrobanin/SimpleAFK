@@ -1,0 +1,17 @@
+# ---------------------------------- #
+#    Configuração do SimpleAFK       #
+# ---------------------------------- #
+
+# Tempo em SEGUNDOS para um jogador ser considerado AFK por inatividade.
+afk-timer-seconds: 300
+
+# --- Mensagens Customizáveis (Enviadas apenas para o jogador) ---
+# Use MiniMessage para cores! Ex: <green>, <bold>, ou cores hexadecimais <#FF5733>.
+messages:
+  # Mensagens para AFK por inatividade
+  private-afk-notification: "<gray>Você agora está AFK por inatividade."
+  private-no-longer-afk: "<green>Você não está mais AFK!"
+
+  # Mensagens para o comando /afk manual
+  manual-set-afk: "<gray>Você entrou no modo AFK."
+  manual-unset-afk: "<green>Você saiu do modo AFK."

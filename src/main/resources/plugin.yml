@@ -1,0 +1,28 @@
+name: SimpleAFK
+version: '${project.version}'
+main: com.java.simpleafk.SimpleAFK
+api-version: '1.21'
+author: leehzado
+description: Um plugin simples para gerenciar status de jogadores.
+depend: [PlaceholderAPI]
+
+commands:
+  afk:
+    description: Entra ou sai do modo AFK.
+    usage: /afk
+    permission: simpleafk.toggle
+  simpleafk:
+    description: Comando principal do SimpleAFK.
+    aliases: [safk]
+    usage: /<command> <info|reload>
+
+permissions:
+  simpleafk.toggle:
+    description: Permite ao jogador usar o comando /afk.
+    default: true
+  simpleafk.reload:
+    description: Permite recarregar a configuração do SimpleAFK.
+    default: op
+  simpleafk.info:
+    description: Permite ver as informações do plugin.
+    default: true
